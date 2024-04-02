@@ -11,10 +11,10 @@ This is a Book Record Managment API Backend Application, a Node.js backend appli
 ## Routes and Endpoints:
 The structure is well-defined, separating user and book management routes.
 ### User Endpoints:
-Create (POST /users): Allows creating new users.
-Get All (GET /users): Retrieves a list of all registered users.
-Get by ID (GET /users/{id}): Fetches a specific user's details based on their ID.
-Update (PUT /users/{id}): Updates user information with the provided data.
+Create >> (POST /users): Allows creating new users.
+Get All >> (GET /users): Retrieves a list of all registered users.
+Get by ID >> (GET /users/{id}): Fetches a specific user's details based on their ID.
+Update >> (PUT /users/{id}): Updates user information with the provided data.
 Delete (DELETE /users/{id}): Deletes a user. Consider adding a check for issued books and outstanding fines before deletion.
 Subscription Details (GET /users/subscription-deails/{id}): Retrieves subscription details for a specific user, including start date, validity period, and any outstanding fines.
 

@@ -120,7 +120,7 @@ router.delete("/:id", (req,res) => {
 /* 
 Route: /users/subscription-details/:id
 Method: GET
-Provides subscription details
+Provides all subscription details by user
 Paramaters: id 
 */
 router.get("/subscription-details/:id", (req,res) => {

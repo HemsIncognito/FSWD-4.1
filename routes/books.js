@@ -49,7 +49,7 @@ Method: GET
 Get all issued books
 Parameters: None
 */ 
-router.get("/issued/free", (req,res) => {
+router.get("/issued/any", (req,res) => {
     const hasIssuedBooks = users.filter((each) => {
         if(each.issuedBook) return each
     })
@@ -117,7 +117,7 @@ router.put("/:id", (req,res) => {
     const {data} = req.body;
 
     if(id === "") return res.status(400).json({
-        message: "Enter a valid ID"
+        message: "Please enter a valid ID"
     })
 
     const book = users.find((each) => each.id === id);

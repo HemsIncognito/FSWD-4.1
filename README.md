@@ -11,19 +11,19 @@ This is a Book Record Managment API Backend Application, a Node.js backend appli
 ## Routes and Endpoints:
 The structure is well-defined, separating user and book management routes.
 ### User Endpoints:
-Create >> (POST /users): Allows creating new users.
-Get All >> (GET /users): Retrieves a list of all registered users.
-Get by ID >> (GET /users/{id}): Fetches a specific user's details based on their ID.
-Update >> (PUT /users/{id}): Updates user information with the provided data.
-Delete (DELETE /users/{id}): Deletes a user. Consider adding a check for issued books and outstanding fines before deletion.
-Subscription Details (GET /users/subscription-deails/{id}): Retrieves subscription details for a specific user, including start date, validity period, and any outstanding fines.
+- Create  (POST /users): Allows creating new users.  
+- Get All (GET /users): Retrieves a list of all registered users.  
+- Get by ID (GET /users/{id}): Fetches a specific user's details based on their ID.  
+- Update (PUT /users/{id}): Updates user information with the provided data.  
+- Delete (DELETE /users/{id}): Deletes a user. Consider adding a check for issued books and outstanding fines before deletion.  
+- Subscription Details (GET /users/subscription-deails/{id}): Retrieves subscription details for a specific user, including start date, validity period, and any outstanding fines.  
 
 ### Book Endpoints:
-Get All (GET /books): Returns a list of all books in the system.
-Create (POST /books): Allows adding new books to the system.
-Get by ID (GET /books/{id}): Retrieves information about a specific book based on its ID.
-Update (PUT /books/{id}): Updates details of an existing book.
-Issued Books (GET /books/issued): Lists all currently issued books.
+- Get All (GET /books): Returns a list of all books in the system.
+- Create (POST /books): Allows adding new books to the system.
+- Get by ID (GET /books/{id}): Retrieves information about a specific book based on its ID.
+- Update (PUT /books/{id}): Updates details of an existing book.
+- Issued Books (GET /books/issued): Lists all currently issued books.
 
 ## Skills Highlighted
 - **Backend Development**: The project demonstrates proficiency in building backend applications using Node.js and Express.js.
